@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:24:44 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:21:09 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:37:37 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
+/* 
+int main()
+{
+	char *s = "Hola Mundo";
+	printf("%s\n", ft_substr(s, 5, 5));
+	printf("%s\n", ft_substr(s, 5, 10));
+	printf("%s\n", ft_substr(s, 5, 0));
+	printf("%s\n", ft_substr(s, 0, 5));
+	printf("%s\n", ft_substr(s, 0, 0));
+	printf("%s\n", ft_substr(s, 0, 10));
+	printf("%s\n", ft_substr(s, 10, 5));
+	printf("%s\n", ft_substr(s, 10, 0));
+	printf("%s\n", ft_substr(s, 10, 10));
+} */

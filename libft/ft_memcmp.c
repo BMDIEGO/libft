@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:55:40 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:20:17 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:23:53 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+/* 
+int main()
+{
+	char *s1 = "Hola Mundo";
+	char *s2 = "Hola Mundo";
+	printf("%d\n", ft_memcmp(s1, s2, 10));
+	printf("%d\n", memcmp(s1, s2, 10));
+} */

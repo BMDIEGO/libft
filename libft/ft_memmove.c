@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:42:16 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:20:23 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:31:12 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			*d++ = *s++;
 	return (dst);
 }
+/* 
+int main()
+{
+	char src[] = "Hola Mundo";
+	char dst[10];
+	ft_memmove(dst, src, 10);
+	printf("%s\n", dst);
+} */

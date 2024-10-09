@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:25:42 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/03 17:27:07 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:33:35 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,3 +75,11 @@ char	**ft_split(char const *s, char c)
 	split[j] = NULL;
 	return (split);
 }
+/* 
+int main()
+{
+	char **split;
+	split = ft_split("Hola Mundo", ' ');
+	printf("%s\n", split[0]);
+	printf("%s\n", split[1]);
+} */

@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:28:48 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:20:32 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:32:44 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,13 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(num / 10, fd);
 	ft_putchar_fd(num % 10 + '0', fd);
 }
+/* 
+int main()
+{
+	ft_putnbr_fd(1234567890, 1);
+	ft_putchar_fd('\n', 1);
+	ft_putnbr_fd(-1234567890, 1);
+	ft_putchar_fd('\n', 1);
+	ft_putnbr_fd(0, 1);
+	ft_putchar_fd('\n', 1);
+} */

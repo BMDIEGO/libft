@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:25:28 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:21:07 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:37:09 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
+/* 
+int main()
+{
+	char *s = "Hola Mundo";
+	char *set = "H";
+	printf("%s\n", ft_strtrim(s, set));
+	printf("%s\n", strtrim(s, set));
+} */

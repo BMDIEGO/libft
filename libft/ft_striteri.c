@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:27:16 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:20:44 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:34:27 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		}
 	}
 }
+/* 
+int main()
+{
+	char s[] = "Hola Mundo";
+	ft_striteri(s, ft_putchar_fd);
+} */

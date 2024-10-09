@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:42:42 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:20:52 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:35:47 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		i++;
 	return (i);
 }
+/* 
+int main()
+{
+	char dst[10] = "Hola";
+	char src[] = " Mundo";
+	printf("%lu\n", ft_strlcpy(dst, src, 10));
+	printf("%s\n", dst);
+} */

@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:55:28 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:20:12 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:23:33 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/* 
+int main()
+{
+	char *s = "Hola Mundo";
+	printf("%s\n", ft_memchr(s, 'M', 9));
+	printf("%s\n", memchr(s, 'M', 9));
+}
+ */

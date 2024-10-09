@@ -6,7 +6,7 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:41:29 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/09/28 19:20:47 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:35:07 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[i] = '\0';
 	return (result);
 }
+/* 
+int main()
+{
+	char *s1 = "Hola ";
+	char *s2 = "Mundo";
+	printf("%s\n", ft_strjoin(s1, s2));
+	printf("%s\n", strjoin(s1, s2));
+} */
