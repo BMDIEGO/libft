@@ -13,6 +13,14 @@
 #include "libft.h"
 #include <stddef.h>
 
+// Función que busca la primera aparición de la cadena 'needle' en 'haystack' dentro de los primeros 'len' caracteres.
+// Retorna un puntero al inicio de la subcadena encontrada o NULL si 'needle' no se encuentra.
+// Linea 29 - Si 'needle' es una cadena vacía, retorna 'haystack'.
+// Linea 31 - Obtiene la longitud de 'needle'.
+// Linea 33 - Recorre 'haystack' hasta 'len', asegurándose de no sobrepasar el límite.
+// Linea 35 - Compara la subcadena de 'haystack' con 'needle'.
+// Linea 36 - Si coincide, retorna un puntero al inicio de la subcadena encontrada.
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;

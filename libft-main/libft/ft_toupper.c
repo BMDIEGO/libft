@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+// Función que convierte un carácter en mayúscula si es una letra minúscula.
+// Retorna el carácter convertido o el mismo carácter si no es una letra minúscula.
+
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

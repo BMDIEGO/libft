@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+// Función que crea una nueva subcadena de 's' comenzando desde 'start' con una longitud de 'len'.
+// Retorna un puntero a la subcadena o NULL si hay un error.
+// Linea 27 - Verifica si 's' es NULL o si 'start' es mayor o igual que la longitud de 's'.
+// Linea 28 - Retorna una cadena vacía en caso de que 's' sea NULL o 'start' sea inválido.
+// Linea 29 - Ajusta 'len' si la longitud restante de 's' a partir de 'start' es menor que 'len'.
+// Linea 31 - Reserva memoria para la nueva subcadena, incluyendo el carácter nulo al final.
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;

@@ -12,6 +12,12 @@
 
 #include "libft.h"
 
+// Función que aplica la función 'f' a cada carácter de la cadena 's', creando una nueva cadena con el resultado.
+// Retorna un nuevo string en el que cada carácter es modificado según 'f'.
+// Linea 26 - Si 's' o 'f' son NULL, retorna NULL.
+// Linea 28 - Reserva memoria para la nueva cadena (tamaño de 's' + 1 para el carácter nulo).
+// Linea 34 - Aplica la función 'f' a cada carácter de 's' y lo guarda en 'new_str'.
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*new_str;

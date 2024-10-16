@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+// Función que duplica la cadena 'src' asignando memoria para la nueva cadena.
+// Retorna un puntero a la nueva cadena, o NULL si falla la asignación de memoria.
+// Linea 24 - Almacena el tamaño de la cadena fuente 'src'.
+// Linea 27 - Calcula la longitud de la cadena fuente.
+// Linea 28 - Asigna memoria para la nueva cadena, incluyendo espacio para el carácter nulo ('\0').
+// Linea 31 - Copia el contenido de 'src' a 'dest' usando ft_memcpy.
+
 char	*ft_strdup(const char *src)
 {
 	size_t	size;

@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+// Función que concatena las cadenas 's1' y 's2' en una nueva cadena.
+// Retorna un puntero a la nueva cadena resultante, o NULL si falla la asignación de memoria.
+// Linea 29 - Calcula la longitud total de la nueva cadena.
+// Linea 30 - Asigna memoria para la nueva cadena, incluyendo espacio para el carácter nulo ('\0').
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*result;

@@ -13,6 +13,12 @@
 #include "libft.h"
 #include <stddef.h>
 
+// Función que concatena la cadena 'src' al final de 'dst', con un tamaño máximo de 'dstsize'.
+// Retorna la longitud total de la cadena que intenta crear ('dst' + 'src').
+// Linea 31 - Calcula la longitud de 'dst' hasta el tamaño 'dstsize'.
+// Linea 35 - Si el tamaño de 'dst' es igual a 'dstsize', retorna la suma de 'dstsize' y 'slen'.
+// Linea 37 - Copia 'src' a 'dst' mientras haya espacio disponible.
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	dlen;

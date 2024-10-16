@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+// Función que busca la primera aparición del carácter 'c' en la cadena 's'.
+// Retorna un puntero a la primera aparición de 'c', o NULL si no se encuentra.
+// Linea 21 - Recorre la cadena 's' hasta encontrar el carácter 'c' o hasta llegar al final de la cadena.
+
 char	*ft_strchr(const char *s, int c)
 {
 	while ((char)c != *s)

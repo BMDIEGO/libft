@@ -13,6 +13,11 @@
 #include "libft.h"
 #include <stddef.h>
 
+// Función que copia la cadena 'src' en 'dst', asegurando que 'dst' esté terminada en '\0'.
+// Copia hasta 'dstsize' - 1 caracteres y retorna la longitud de 'src'.
+// Linea 26 - Si 'dstsize' es mayor que 0, realiza la copia de caracteres de 'src' a 'dst'.
+// Linea 28 - Copia caracteres de 'src' en 'dst' hasta que se complete el tamaño 'dstsize' - 1.
+
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

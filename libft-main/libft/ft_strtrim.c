@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+// Función que verifica si el carácter 'c' está presente en la cadena 'set'.
+// Retorna 1 si 'c' está en 'set', de lo contrario retorna 0.
+// Linea 24 - Si se encuentra el carácter, retorna 1.
+
+
 static int	ft_isset(char c, char const *set)
 {
 	while (*set)
@@ -22,6 +27,13 @@ static int	ft_isset(char c, char const *set)
 	}
 	return (0);
 }
+
+
+// Función que elimina los caracteres del conjunto 'set' al inicio y al final de la cadena 's1'.
+// Retorna una nueva cadena con los caracteres eliminados o NULL si hay un error.
+// Linea 46 - Avanza el índice 'start' mientras los caracteres sean parte del conjunto 'set'.
+// Linea 49 - Retrocede el índice 'end' mientras los caracteres sean parte del conjunto 'set'.
+// Linea 51 - Retorna la subcadena resultante sin los caracteres del conjunto 'set'.
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
