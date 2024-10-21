@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+// Función que itera sobre cada nodo de la lista enlazada 'lst'
+// y aplica la función 'f' al contenido de cada nodo.
+// Linea 24 - Aplica la función 'f' al contenido del nodo actual.
+// Linea 25 - Avanza al siguiente nodo.
+
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)

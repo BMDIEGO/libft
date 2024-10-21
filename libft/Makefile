@@ -22,20 +22,39 @@ BONUS_SRC = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstl
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 # Reglas
+# La regla 'all' es el objetivo principal, y depende de $(NAME), 
+# que normalmente es el nombre del archivo de salida (ejecutable o biblioteca).
 all: $(NAME)
 
+# Regla para generar $(NAME), que normalmente es una biblioteca estática.
+# Depende de $(OBJ), los archivos objeto (.o) generados previamente.
 $(NAME): $(OBJ)
+	# 'ar rcs' crea o actualiza una biblioteca estática (.a).
+	# 'r' inserta archivos, 'c' crea la biblioteca si no existe,
+	# y 's' escribe el índice de la biblioteca.
 	ar rcs $(NAME) $(OBJ)
 
+# Regla para generar la versión "bonus" del proyecto.
+# Esta versión incluye tanto $(OBJ) como $(BONUS_OBJ) en la biblioteca.
 bonus: $(OBJ) $(BONUS_OBJ)
+	# Similar a la regla anterior, pero incluye los archivos bonus.
 	ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
 
+# Regla para eliminar archivos intermedios (.o).
 clean:
+	# Elimina los archivos objeto (.o) normales y los de bonus.
 	rm -f $(OBJ) $(BONUS_OBJ)
 
+# Regla para limpiar completamente el proyecto.
+# Primero llama a 'clean' y luego elimina el archivo final $(NAME).
 fclean: clean
+	# Elimina el archivo resultante (ejecutable o biblioteca).
 	rm -f $(NAME)
 
+# Regla para reconstruir el proyecto desde cero.
+# Primero limpia todo (fclean) y luego ejecuta la regla 'all' para recompilar.
 re: fclean all
 
+# Declara que estos objetivos no son archivos reales.
+# Esto asegura que make no se confunda si existen archivos con estos nombres.
 .PHONY: all clean fclean re bonus

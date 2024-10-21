@@ -6,12 +6,18 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:28:48 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/09 17:32:44 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:47:42 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Función que escribe el número entero 'n' en el file descriptor 'fd'.
+// Maneja números negativos e imprime dígito a dígito.
+// Linea 31 - Si el número tiene más de un dígito, llama recursivamente para 
+// imprimir los dígitos anteriores.
+// Linea 32 - Llama a sí misma con el número dividido por 10.
+// Linea 33 - Imprime el último dígito.
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	num;

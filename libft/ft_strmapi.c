@@ -6,11 +6,20 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:26:40 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/09 17:36:17 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:55:52 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Función que aplica la función 'f' a cada carácter de la cadena 's', 
+// creando una nueva cadena con el resultado.
+// Retorna un nuevo string en el que cada carácter es modificado según 'f'.
+// Linea 29 - Si 's' o 'f' son NULL, retorna NULL.
+// Linea 31 - Reserva memoria para la nueva cadena (tamaño de 's' + 1 para 
+// el carácter nulo).
+// Linea 37 - Aplica la función 'f' a cada carácter de 's' y lo guarda en 
+// 'new_str'.
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

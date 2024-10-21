@@ -6,11 +6,19 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:31:16 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/09 17:38:30 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:27:45 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Función que aplica la función 'f' a cada elemento de la lista enlazada 'lst',
+// creando una nueva lista con los resultados. Si la asignación de memoria 
+// falla, se libera la nueva lista usando 'del'.
+// Linea 33 - Crea un nuevo nodo aplicando 'f' al contenido del nodo actual.
+// Linea 36 - Libera la nueva lista.
+// Linea 39 - Agrega el nuevo nodo al final de la nueva lista.
+// Linea 40 - Avanza al siguiente nodo de la lista original.
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+// Función que escribe la cadena de caracteres 's' en el file descriptor 'fd'.
+// Si 's' es NULL, no hace nada.
+// Linea 22 - Escribe la cadena completa en el file descriptor 'fd'.
+
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (s)

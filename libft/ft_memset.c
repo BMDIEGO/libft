@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+// Función que establece los primeros 'n' bytes de la memoria apuntada por 's'
+// al valor del carácter 'c'. Devuelve un puntero a 's'.
+
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t	i;

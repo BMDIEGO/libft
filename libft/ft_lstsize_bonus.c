@@ -6,11 +6,14 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 16:29:28 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/07 16:56:20 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:28:09 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Función que calcula y devuelve el número de elementos (nodos) en la 
+// lista enlazada 'lst'.
 
 int	ft_lstsize(t_list *lst)
 {

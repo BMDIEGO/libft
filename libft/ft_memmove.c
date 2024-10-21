@@ -6,12 +6,23 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:42:16 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/09 17:31:12 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:46:43 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
+
+// Función que copia 'len' bytes de la memoria apuntada por 'src' a la 
+// memoria apuntada por 'dst'.
+// Permite la superposición de las áreas de memoria. Devuelve un puntero a 
+// 'dst'.
+// Linea 32 - Convierte 'dst' a un puntero a unsigned char.
+// Linea 34 - Si el destino y la fuente son iguales, no se necesita hacer 
+// nada, se devuelve 'dst'.
+// Linea 36 - Si la dirección de origen está por debajo de la de destino, 
+// se realiza la copia hacia atrás
+// Linea 41 - Copia el byte actual de 'src' a 'dst' y avanza ambos punteros.
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+// Función que devuelve el último nodo de la lista enlazada 'lst'.
+// Si la lista está vacía, devuelve NULL.
+// Linea 22 - Recorre la lista hasta encontrar el último nodo.
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

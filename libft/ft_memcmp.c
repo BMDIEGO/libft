@@ -6,12 +6,21 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:55:40 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/09 17:23:53 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:45:58 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
+
+// Función que compara los primeros 'n' bytes de las áreas de memoria 's1' 
+// y 's2'.
+// Devuelve un valor negativo, cero o positivo dependiendo de si 's1' es 
+// menor, igual o mayor que 's2'.
+// Linea 30 - Convierte 's*' a un puntero a unsigned char.
+// Linea 31 - Itera sobre los primeros 'n' bytes de ambas áreas de memoria.
+// Linea 34 - Si los bytes en las posiciones actuales son diferentes, 
+// retorna la diferencia.
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

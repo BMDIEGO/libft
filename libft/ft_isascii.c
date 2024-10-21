@@ -6,11 +6,16 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:40:19 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/03 17:30:24 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:37:51 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Función que verifica si el valor entero 'c' pertenece al conjunto de 
+// caracteres ASCII.
+// Devuelve 1 si 'c' está en el rango de 0 a 127, de lo contrario devuelve 0.
+// Linea 21 - Comprueba si 'c' está dentro del rango de valores ASCII.
 
 int	ft_isascii(int c)
 {

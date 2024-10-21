@@ -6,11 +6,17 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:40:37 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/03 17:31:35 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:38:19 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// Función que verifica si el carácter 'c' es imprimible, es decir, si tiene 
+// una representación visible. Devuelve 1 si 'c' está en el rango de 
+// caracteres imprimibles (32 a 126), de lo contrario devuelve 0.
+// Linea 21 - Comprueba si 'c' está dentro del rango de caracteres 
+// imprimibles ASCII.
 
 int	ft_isprint(int c)
 {

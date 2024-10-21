@@ -6,11 +6,17 @@
 /*   By: dbarrajo <dbarrajo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:58:17 by dbarrajo          #+#    #+#             */
-/*   Updated: 2024/10/02 16:51:23 by dbarrajo         ###   ########.fr       */
+/*   Updated: 2024/10/17 15:23:16 by dbarrajo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* Función que convierte una cadena de caracteres (string) en un número entero.
+La conversión se detiene cuando encuentra un carácter que no sea un número.
+Linea 40 - Mientras el carácter actual sea un dígito, continúa la conversión.
+Linea 43 - Desplaza los dígitos previos a la izquierda (equivale a x10).
+Linea 43 - Convierte el carácter a su valor numérico y lo suma. */
 
 int	ft_atoi(const char *str)
 {
